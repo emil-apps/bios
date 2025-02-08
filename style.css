@@ -1,0 +1,68 @@
+html{
+    background-color: black;
+    cursor: none !important;
+}
+
+@font-face {
+    font-family: "bios";
+    src: url("font.ttf");
+}
+
+body{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: "bios";
+    user-select: none;
+
+    width: 800px;
+    height: 600px;
+    
+    background-color: #AAAAAA;
+}
+
+.titlebar{
+    background-color: #00AAAA;
+    color: black;
+    text-align: center;
+}
+
+.tabs{
+    background-color: #0000AA;
+    color: white;
+
+    padding-left: 12px;
+}
+
+.tabs span{
+    padding: 2px 12px;
+}
+
+.tabs span.active{
+    background-color: #AAAAAA;
+    color: #0000AA;
+}
+
+.instructions{
+    background-color: #00AAAA;
+    color: black;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+
+    text-align: left;
+}
+
+.instructions tr th{
+    font-weight: normal;
+}
+
+.instructions .key{
+    color: white;
+}
