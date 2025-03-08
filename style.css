@@ -66,3 +66,44 @@ body{
 .instructions .key{
     color: white;
 }
+
+div.page table{
+    border-collapse: collapse;
+}
+
+div.page table tr.space-below th{
+    padding-bottom: 20px;
+}
+
+div.page table tr.space-left th:nth-child(1){
+    padding-left: 12px;
+}
+
+.page{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.page.hidden{
+    display: none;
+}
+
+div.page table tr th{
+    padding: 3px;
+    font-weight: normal;
+    text-align: left;
+
+    color: #0000AA;
+}
+
+div.page table tr :nth-child(2){
+    color: black;
+}
+
+div.page table tr.disabled :nth-child(2){
+    color: #6e6e6e;
+}
+
+div.page table tr.selected th{
+    color: white;
+}
