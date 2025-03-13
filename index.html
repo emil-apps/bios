@@ -8,257 +8,263 @@
     <title>BIOS</title>
 </head>
 <body>
-    <div class="titlebar">Phoenix SecureCore Tiano Setup</div>
+    <div class="bios">
+        <div class="titlebar">Phoenix SecureCore Tiano Setup</div>
 
-    <div class="tabs">
-        <span id="tb-info" class="active">Info</span>
-        <span id="tb-system">System</span>
-        <span id="tb-advanced">Advanced</span>
-        <span id="tb-security">Security</span>
-        <span id="tb-boot">Boot</span>
-        <span id="tb-exit">Exit</span>
-    </div>
+        <div class="tabs">
+            <span id="tb-info" class="active">Info</span>
+            <span id="tb-system">System</span>
+            <span id="tb-advanced">Advanced</span>
+            <span id="tb-security">Security</span>
+            <span id="tb-boot">Boot</span>
+            <span id="tb-exit">Exit</span>
+        </div>
 
-    <div class="page" id="t-info">
-        <table>
-            <tr class="disabled space-below">
-                <th>Product Name:</th>
-                <th>LIFEBOOK E782</th>
+        <div class="page" id="t-info">
+            <table>
+                <tr class="disabled space-below">
+                    <th>Product Name:</th>
+                    <th>LIFEBOOK E782</th>
+                </tr>
+                <tr class="disabled">
+                    <th>Serial Number:</th>
+                    <th>XXXXXXXXXXXXX</th>
+                </tr>
+                <tr class="disabled space-below">
+                    <th>BIOS Version:</th>
+                    <th>2.12 (11/10/2014)</th>
+                </tr>
+                <tr class="disabled space-below">
+                    <th>Processor Type:</th>
+                    <th>Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz</th>
+                </tr>
+                <tr class="disabled">
+                    <th>Total Memory:</th>
+                    <th>8192 MB</th>
+                </tr>
+                <tr class="disabled space-left">
+                    <th>Memory Slot 1:</th>
+                    <th>4096 MB DDR3 SDRAM</th>
+                </tr>
+                <tr class="disabled space-left space-below">
+                    <th>Memory Slot 2:</th>
+                    <th>4096 MB DDR3 SDRAM</th>
+                </tr>
+                <tr class="disabled">
+                    <th>Onboard MAC Address:</th>
+                    <th>XX-XX-XX-XX-XX-XX</th>
+                </tr>
+                <tr class="disabled">
+                    <th>UUID:</th>
+                    <th>XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</th>
+                </tr>
+                <tr class="disabled">
+                    <th>Panel ID:</th>
+                    <th>XXXXXXXX</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="page hidden" id="t-system">
+            <table>
+                <tr class="selected">
+                    <th>System Time:</th>
+                    <th id="sys-time" class="disabled">[00:00:00]</th>
+                </tr>
+                <tr>
+                    <th>System Date:</th>
+                    <th id="sys-date">[01/01/2011]</th>
+                </tr>
+                <tr>
+                    <th>&#10148; Drive Configurations</th>
+                </tr>
+                <tr>
+                    <th>Language:</th>
+                    <th>[English (US)]</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="page hidden" id="t-advanced">
+            <table>
+                <tr class="selected">
+                    <th>&#10148; Boot Configurations</th>
+                </tr>
+                <tr>
+                    <th>&#10148; Serial/Parallel Port Configurations</th>
+                </tr>
+                <tr>
+                    <th>&#10148; Video Features</th>
+                </tr>
+                <tr>
+                    <th>&#10148; Internal Device Configurations</th>
+                </tr>
+                <tr>
+                    <th>&#10148; CPU Features</th>
+                </tr>
+                <tr>
+                    <th>&#10148; USB Features</th>
+                </tr>
+                <tr>
+                    <th>&#10148; Miscellaneous Configurations</th>
+                </tr>
+                <tr class="space-below">
+                    <th>&#10148; Intel(R) Management Engine Configurations</th>
+                </tr>
+                <tr>
+                    <th>&#10148; Event Logging</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="page hidden" id="t-security">
+            <table>
+                <tr class="disabled">
+                    <th>Supervisor Password Is:</th>
+                    <th>Clear</th>
+                </tr>
+                <tr class="disabled space-below">
+                    <th>User Password Is:</th>
+                    <th>Clear</th>
+                </tr>
+                <tr class="selected">
+                    <th>Set Supervisor Password</th>
+                    <th>[Enter]</th>
+                </tr>
+                <tr>
+                    <th>Set User Password</th>
+                    <th>[Enter]</th>
+                </tr>
+                <tr>
+                    <th>Minimum User Password Length:</th>
+                    <th>[0]</th>
+                </tr>
+                <tr>
+                    <th>Password on Boot:</th>
+                    <th>[Disabled]</th>
+                </tr>
+                <tr class="space-left">
+                    <th>On Automatic Wake up:</th>
+                    <th>[Disabled]</th>
+                </tr>
+                <tr>
+                    <th>Boot from Removable Media:</th>
+                    <th>[All]</th>
+                </tr>
+                <tr>
+                    <th>Flash Write:</th>
+                    <th>[Enabled]</th>
+                </tr>
+                <tr>
+                    <th>Boot Menu:</th>
+                    <th>[Enabled]</th>
+                </tr>
+                <tr>
+                    <th>&#10148; Hard Disk Security</th>
+                </tr>
+                <tr>
+                    <th>&#10148; Owner Information</th>
+                </tr>
+                <tr>
+                    <th>&#10148; TPM(Security Chip) Setting</th>
+                </tr>
+                <tr>
+                    <th>&#10148; Secure Boot Configurations</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="page hidden" id="t-boot">
+            Boot Priority Order
+            <table style="margin-left: 20px;">
+                <tr class="selected">
+                    <th>1. Windows Boot Manager</th>
+                </tr>
+                <tr>
+                    <th>2. CD/DVD Drive: HL-DT-ST DVDRAM GT80N</th>
+                </tr>
+                <tr>
+                    <th>3. USB HDD:</th>
+                </tr>
+                <tr>
+                    <th>4. Drive0 HDD:</th>
+                </tr>
+                <tr>
+                    <th>5. Drive2 HDD:</th>
+                </tr>
+                <tr>
+                    <th>6. Drive4 HDD:</th>
+                </tr>
+                <tr>
+                    <th>7. Drive5 HDD:</th>
+                </tr>
+                <tr>
+                    <th>8. NETWORK:</th>
+                </tr>
+                <tr>
+                    <th>9. USB CD/DVD:</th>
+                </tr>
+                <tr>
+                    <th>10. Floppy Disk Drive:</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="page hidden" id="t-exit">
+            <table>
+                <tr class="selected">
+                    <th>Exit Saving Changes</th>
+                </tr>
+                <tr>
+                    <th>Exit Discarding Changes</th>
+                </tr>
+                <tr>
+                    <th>Load Setup Defaults</th>
+                </tr>
+                <tr>
+                    <th>Discard Changes</th>
+                </tr>
+                <tr>
+                    <th>Save Changes</th>
+                </tr>
+                <tr>
+                    <th>Save Changes and Power Off</th>
+                </tr>
+            </table>
+        </div>
+
+        <table class="instructions">
+            <tr>
+                <th class="key">F1</th>
+                <th>Help</th>
+
+                <th class="key">&#x21D5;</th>
+                <th>Select Item</th>
+
+                <th class="key">-/+</th>
+                <th>Change Values</th>
+
+                <th class="key">F9</th>
+                <th>Setup Defaults</th>
             </tr>
-            <tr class="disabled">
-                <th>Serial Number:</th>
-                <th>XXXXXXXXXXXXX</th>
-            </tr>
-            <tr class="disabled space-below">
-                <th>BIOS Version:</th>
-                <th>2.12 (11/10/2014)</th>
-            </tr>
-            <tr class="disabled space-below">
-                <th>Processor Type:</th>
-                <th>Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz</th>
-            </tr>
-            <tr class="disabled">
-                <th>Total Memory:</th>
-                <th>8192 MB</th>
-            </tr>
-            <tr class="disabled space-left">
-                <th>Memory Slot 1:</th>
-                <th>4096 MB DDR3 SDRAM</th>
-            </tr>
-            <tr class="disabled space-left space-below">
-                <th>Memory Slot 2:</th>
-                <th>4096 MB DDR3 SDRAM</th>
-            </tr>
-            <tr class="disabled">
-                <th>Onboard MAC Address:</th>
-                <th>XX-XX-XX-XX-XX-XX</th>
-            </tr>
-            <tr class="disabled">
-                <th>UUID:</th>
-                <th>XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</th>
-            </tr>
-            <tr class="disabled">
-                <th>Panel ID:</th>
-                <th>XXXXXXXX</th>
+            <tr>
+                <th class="key">Esc</th>
+                <th>Exit</th>
+
+                <th class="key">&harr;</th>
+                <th>Select Menu</th>
+
+                <th class="key">Enter</th>
+                <th>Select Sub-Menu</th>
+
+                <th class="key">F10</th>
+                <th>Save and Exit</th>
             </tr>
         </table>
     </div>
 
-    <div class="page hidden" id="t-system">
-        <table>
-            <tr class="selected">
-                <th>System Time:</th>
-                <th id="sys-time" class="disabled">[00:00:00]</th>
-            </tr>
-            <tr>
-                <th>System Date:</th>
-                <th id="sys-date">[01/01/2011]</th>
-            </tr>
-            <tr>
-                <th>&#10148; Drive Configurations</th>
-            </tr>
-            <tr>
-                <th>Language:</th>
-                <th>[English (US)]</th>
-            </tr>
-        </table>
-    </div>
-
-    <div class="page hidden" id="t-advanced">
-        <table>
-            <tr>
-                <th>&#10148; Boot Configurations</th>
-            </tr>
-            <tr>
-                <th>&#10148; Serial/Parallel Port Configurations</th>
-            </tr>
-            <tr>
-                <th>&#10148; Video Features</th>
-            </tr>
-            <tr>
-                <th>&#10148; Internal Device Configurations</th>
-            </tr>
-            <tr>
-                <th>&#10148; CPU Features</th>
-            </tr>
-            <tr>
-                <th>&#10148; USB Features</th>
-            </tr>
-            <tr>
-                <th>&#10148; Miscellaneous Configurations</th>
-            </tr>
-            <tr class="space-below">
-                <th>&#10148; Intel(R) Management Engine Configurations</th>
-            </tr>
-            <tr>
-                <th>&#10148; Event Logging</th>
-            </tr>
-        </table>
-    </div>
-
-    <div class="page hidden" id="t-security">
-        <table>
-            <tr class="disabled">
-                <th>Supervisor Password Is:</th>
-                <th>Clear</th>
-            </tr>
-            <tr class="disabled space-below">
-                <th>User Password Is:</th>
-                <th>Clear</th>
-            </tr>
-            <tr class="selected">
-                <th>Set Supervisor Password</th>
-                <th>[Enter]</th>
-            </tr>
-            <tr>
-                <th>Set User Password</th>
-                <th>[Enter]</th>
-            </tr>
-            <tr>
-                <th>Minimum User Password Length:</th>
-                <th>[0]</th>
-            </tr>
-            <tr>
-                <th>Password on Boot:</th>
-                <th>[Disabled]</th>
-            </tr>
-            <tr class="space-left">
-                <th>On Automatic Wake up:</th>
-                <th>[Disabled]</th>
-            </tr>
-            <tr>
-                <th>Boot from Removable Media:</th>
-                <th>[All]</th>
-            </tr>
-            <tr>
-                <th>Flash Write:</th>
-                <th>[Enabled]</th>
-            </tr>
-            <tr>
-                <th>Boot Menu:</th>
-                <th>[Enabled]</th>
-            </tr>
-            <tr>
-                <th>&#10148; Hard Disk Security</th>
-            </tr>
-            <tr>
-                <th>&#10148; Owner Information</th>
-            </tr>
-            <tr>
-                <th>&#10148; TPM(Security Chip) Setting</th>
-            </tr>
-            <tr>
-                <th>&#10148; Secure Boot Configurations</th>
-            </tr>
-        </table>
-    </div>
-
-    <div class="page hidden" id="t-boot">
-        Boot Priority Order
-        <table style="margin-left: 20px;">
-            <tr class="selected">
-                <th>1. Windows Boot Manager</th>
-            </tr>
-            <tr>
-                <th>2. CD/DVD Drive: HL-DT-ST DVDRAM GT80N</th>
-            </tr>
-            <tr>
-                <th>3. USB HDD:</th>
-            </tr>
-            <tr>
-                <th>4. Drive0 HDD:</th>
-            </tr>
-            <tr>
-                <th>5. Drive2 HDD:</th>
-            </tr>
-            <tr>
-                <th>6. Drive4 HDD:</th>
-            </tr>
-            <tr>
-                <th>7. Drive5 HDD:</th>
-            </tr>
-            <tr>
-                <th>8. NETWORK:</th>
-            </tr>
-            <tr>
-                <th>9. USB CD/DVD:</th>
-            </tr>
-            <tr>
-                <th>10. Floppy Disk Drive:</th>
-            </tr>
-        </table>
-    </div>
-
-    <div class="page hidden" id="t-exit">
-        <table>
-            <tr class="selected">
-                <th>Exit Saving Changes</th>
-            </tr>
-            <tr>
-                <th>Exit Discarding Changes</th>
-            </tr>
-            <tr>
-                <th>Load Setup Defaults</th>
-            </tr>
-            <tr>
-                <th>Discard Changes</th>
-            </tr>
-            <tr>
-                <th>Save Changes</th>
-            </tr>
-            <tr>
-                <th>Save Changes and Power Off</th>
-            </tr>
-        </table>
-    </div>
-
-    <table class="instructions">
-        <tr>
-            <th class="key">F1</th>
-            <th>Help</th>
-
-            <th class="key">&#x21D5;</th>
-            <th>Select Item</th>
-
-            <th class="key">-/+</th>
-            <th>Change Values</th>
-
-            <th class="key">F9</th>
-            <th>Setup Defaults</th>
-        </tr>
-        <tr>
-            <th class="key">Esc</th>
-            <th>Exit</th>
-
-            <th class="key">&harr;</th>
-            <th>Select Menu</th>
-
-            <th class="key">Enter</th>
-            <th>Select Sub-Menu</th>
-
-            <th class="key">F10</th>
-            <th>Save and Exit</th>
-        </tr>
-    </table>
+    <a id="github-btn" title="View source code" target="_blank" href="http://www.github.com/emil-apps/bios">
+        <img src="github.svg" />
+    </a>
 </body>
 </html>

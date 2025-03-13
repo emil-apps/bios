@@ -1,6 +1,5 @@
 html{
     background-color: black;
-    cursor: none !important;
 }
 
 @font-face {
@@ -9,13 +8,33 @@ html{
 }
 
 body{
+    background-color: black;
+    font-family: "bios";
+    user-select: none;
+    cursor: pointer;
+}
+
+a{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+img{
+    width: 40px;
+    transition: 0.2s;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+.bios{
+    cursor: none !important;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    font-family: "bios";
-    user-select: none;
 
     width: 800px;
     height: 600px;
@@ -23,29 +42,29 @@ body{
     background-color: #AAAAAA;
 }
 
-.titlebar{
+.bios .titlebar{
     background-color: #00AAAA;
     color: black;
     text-align: center;
 }
 
-.tabs{
+.bios .tabs{
     background-color: #0000AA;
     color: white;
 
     padding-left: 12px;
 }
 
-.tabs span{
+.bios .tabs span{
     padding: 2px 12px;
 }
 
-.tabs span.active{
+.bios .tabs span.active{
     background-color: #AAAAAA;
     color: #0000AA;
 }
 
-.instructions{
+.bios .instructions{
     background-color: #00AAAA;
     color: black;
 
@@ -59,36 +78,36 @@ body{
     text-align: left;
 }
 
-.instructions tr th{
+.bios .instructions tr th{
     font-weight: normal;
 }
 
-.instructions .key{
+.bios .instructions .key{
     color: white;
 }
 
-div.page table{
+.bios div.page table{
     border-collapse: collapse;
 }
 
-div.page table tr.space-below th{
+.bios div.page table tr.space-below th{
     padding-bottom: 20px;
 }
 
-div.page table tr.space-left th:nth-child(1){
+.bios div.page table tr.space-left th:nth-child(1){
     padding-left: 12px;
 }
 
-.page{
+.bios .page{
     padding-top: 20px;
     padding-left: 20px;
 }
 
-.page.hidden{
+.bios .page.hidden{
     display: none;
 }
 
-div.page table tr th{
+.bios div.page table tr th{
     padding: 3px;
     font-weight: normal;
     text-align: left;
@@ -96,14 +115,14 @@ div.page table tr th{
     color: #0000AA;
 }
 
-div.page table tr :nth-child(2){
+.bios div.page table tr :nth-child(2){
     color: black;
 }
 
-div.page table tr.disabled :nth-child(2){
+.bios div.page table tr.disabled :nth-child(2){
     color: #6e6e6e;
 }
 
-div.page table tr.selected th{
+.bios div.page table tr.selected th{
     color: white;
 }
