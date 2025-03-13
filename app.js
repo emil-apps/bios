@@ -56,7 +56,7 @@ document.addEventListener("keydown", (e)=>{
 var urlParams = new URLSearchParams(window.location.search);
 if(urlParams.has("github_icon"))
 {
-    if(urlParams.get("github_icon") == "no") document.body.removeChild(document.getElementById("github-btn"));
+    if(urlParams.get("github_icon") == "off") document.body.removeChild(document.getElementById("github-btn"));
 }
 
 // General
