@@ -34,12 +34,12 @@ document.addEventListener("keydown", (e)=>{
     if(e.key.toLowerCase() == "arrowright")
     {
         if(activeTab < tabs.length-1) activeTab++;
-        else activeTab = 0;
+        else activeTab = 0; // go to first tab
     }
     else
     {
-        if(activeTab > 1) activeTab--;
-        else activeTab = tabs.length-1;
+        if(activeTab > 0) activeTab--;
+        else activeTab = tabs.length-1; // go to last tab
     }
 
     for(let i=0;i<tabs.length;i++)
